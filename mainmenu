@@ -565,8 +565,8 @@ theme_manager_menu() {
                 echo -e "  ${BGN}${BD}🎉  Euphoria installed successfully!${N}"; div
                 pause ;;
 
-            # ── 0) Uninstall ──────────────────────────────────
-            0)
+            # ── 3) Uninstall ──────────────────────────────────
+            3)
                 clear; echo ""
                 echo -e "${MG}  ══════════════════════════════════════════════════════${N}"
                 echo -e "              ${BYE}${BD}UNINSTALL THEME${N}"
@@ -673,6 +673,6 @@ while true; do
             echo -e "  ${BCY}${BD}  ✦  Goodbye! — Blueprint Control Panel${N}"; echo ""
             exit 0 ;;
         *)
-            err "Invalid option — choose 1, 2 or 3."; sleep 1 ;;
+            err "Invalid option — choose 1, 2 or 0."; sleep 1 ;;
     esac
 done
