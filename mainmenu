@@ -565,8 +565,8 @@ theme_manager_menu() {
                 echo -e "  ${BGN}${BD}🎉  Euphoria installed successfully!${N}"; div
                 pause ;;
 
-            # ── 3) Uninstall ──────────────────────────────────
-            3)
+            # ── 0) Uninstall ──────────────────────────────────
+            0)
                 clear; echo ""
                 echo -e "${MG}  ══════════════════════════════════════════════════════${N}"
                 echo -e "              ${BYE}${BD}UNINSTALL THEME${N}"
