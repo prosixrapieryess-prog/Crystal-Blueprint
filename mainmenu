@@ -668,11 +668,11 @@ while true; do
     case "$main_opt" in
         1) blueprint_tools_menu ;;
         2) theme_manager_menu ;;
-        0)
+        3)
             clear; echo ""
             echo -e "  ${BCY}${BD}  ✦  Goodbye! — Blueprint Control Panel${N}"; echo ""
             exit 0 ;;
         *)
-            err "Invalid option — choose 1, 2 or 0."; sleep 1 ;;
+            err "Invalid option — choose 1, 2 or 3."; sleep 1 ;;
     esac
 done
