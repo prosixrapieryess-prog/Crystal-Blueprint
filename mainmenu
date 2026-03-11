@@ -668,7 +668,7 @@ while true; do
     case "$main_opt" in
         1) blueprint_tools_menu ;;
         2) theme_manager_menu ;;
-        3)
+        0)
             clear; echo ""
             echo -e "  ${BCY}${BD}  ✦  Goodbye! — Blueprint Control Panel${N}"; echo ""
             exit 0 ;;
