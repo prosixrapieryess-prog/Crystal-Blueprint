@@ -68,16 +68,30 @@ pause() {
     read -p "" dummy
 }
  
+# ── Per-letter colors (matching the pixel image) ─────────────
+CP="\e[91m"   # P – bright red
+CR="\e[93m"   # R – bright yellow
+CO="\e[92m"   # O – bright green
+CX="\e[96m"   # X – bright cyan
+CL="\e[32m"   # L – green
+CE1="\e[33m"  # E – amber/yellow
+CG="\e[36m"   # G – teal
+CE2="\e[95m"  # E – bright magenta/pink
+CN="\e[94m"   # N – bright blue
+CD="\e[35m"   # D – purple
+CY="\e[96m"   # Y – cyan
+CT="\e[91m"   # T – red
+ 
 # ── Rainbow Banner ────────────────────────────────────────────
+# Pixel block letters: P R O X L E G E N D Y T
 draw_banner() {
     echo ""
-    # Big pixel-style PROXLEGENDYT text using block characters
-    echo -e "${R1}  ██████╗ ${R2} ██████╗  ${R3}  ██████╗${R3}██╗  ██╗${R4}██╗     ${R4}███████╗${R5}███████╗${R6}███╗   ██╗${R1}██████╗ ${R2}██╗   ██╗${R3}████████╗${RESET}"
-    echo -e "${R1}  ██╔══██╗${R2}██╔══██╗ ${R3}██╔═══╝ ${R3}╚██╗██╔╝${R4}██║     ${R4}██╔════╝${R5}██╔════╝${R6}████╗  ██║${R1}██╔══██╗${R2}╚██╗ ██╔╝${R3}╚══██╔══╝${RESET}"
-    echo -e "${R1}  ██████╔╝${R2}██████╔╝ ${R3}╚█████╗ ${R3} ╚███╔╝ ${R4}██║     ${R4}█████╗  ${R5}█████╗  ${R6}██╔██╗ ██║${R1}██║  ██║${R2} ╚████╔╝ ${R3}   ██║   ${RESET}"
-    echo -e "${R1}  ██╔═══╝ ${R2}██╔══██╗ ${R3}    ╗██║${R3} ██╔██╗ ${R4}██║     ${R4}██╔══╝  ${R5}██╔══╝  ${R6}██║╚██╗██║${R1}██║  ██║${R2}  ╚██╔╝  ${R3}   ██║   ${RESET}"
-    echo -e "${R1}  ██║     ${R2}██║  ██║ ${R3} ██████║${R3}██╔╝ ██╗${R4}███████╗${R4}███████╗${R5}███████╗${R6}██║ ╚████║${R1}██████╔╝${R2}   ██║   ${R3}   ██║   ${RESET}"
-    echo -e "${R1}  ╚═╝     ${R2}╚═╝  ╚═╝ ${R3} ╚═════╝${R3}╚═╝  ╚═╝${R4}╚══════╝${R4}╚══════╝${R5}╚══════╝${R6}╚═╝  ╚═══╝${R1}╚═════╝ ${R2}   ╚═╝   ${R3}   ╚═╝   ${RESET}"
+    #           P         R         O         X         L         E         G         E         N         D         Y         T
+    echo -e " ${CP}██████ ${CR}██████ ${CO} ████  ${CX}██  ██ ${CL}██     ${CE1}██████ ${CG} █████ ${CE2}██████ ${CN}██  ██ ${CD}█████  ${CY}██  ██ ${CT}██████${RESET}"
+    echo -e " ${CP}██  ██ ${CR}██  ██ ${CO}██  ██ ${CX} ████  ${CL}██     ${CE1}██     ${CG}██     ${CE2}██     ${CN}███ ██ ${CD}██  ██ ${CY}██  ██ ${CT}  ██  ${RESET}"
+    echo -e " ${CP}██████ ${CR}██████ ${CO}██  ██ ${CX}  ██   ${CL}██     ${CE1}████   ${CG}██ ███ ${CE2}████   ${CN}██████ ${CD}██  ██ ${CY} ████  ${CT}  ██  ${RESET}"
+    echo -e " ${CP}██     ${CR}██ ██  ${CO}██  ██ ${CX} ████  ${CL}██     ${CE1}██     ${CG}██  ██ ${CE2}██     ${CN}██ ███ ${CD}██  ██ ${CY}  ██   ${CT}  ██  ${RESET}"
+    echo -e " ${CP}██     ${CR}██  ██ ${CO} ████  ${CX}██  ██ ${CL}██████ ${CE1}██████ ${CG} █████ ${CE2}██████ ${CN}██  ██ ${CD}█████  ${CY}  ██   ${CT}  ██  ${RESET}"
     echo ""
     draw_double_line
     echo -e "   ${YELLOW}⚡${RESET}  ${BOLD}${WHITE}ProXLegendYT Development & VPS Management Suite${RESET}  ${YELLOW}⚡${RESET}"
