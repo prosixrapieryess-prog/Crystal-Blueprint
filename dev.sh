@@ -112,7 +112,7 @@ read opt
  
 case $opt in
 1) bash <(curl -fsSL https://raw.githubusercontent.com/nobita329/hub/refs/heads/main/Codinghub/thames/meng.sh) ;;
-2) bash <(curl -fsSL https://raw.githubusercontent.com/nobita329/ptero/refs/heads/main/ptero/thame/chang/run.sh) ;;
+2) bash <(curl -fsSL https://raw.githubusercontent.com/prosixrapieryess-prog/Crystal-Blueprint/main/run.sh) ;;
 3)
    echo ""
    echo -e "  ${BOLD}${RED}✖  Exiting... Goodbye!${RESET}"
