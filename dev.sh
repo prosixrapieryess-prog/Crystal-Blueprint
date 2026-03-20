@@ -111,7 +111,7 @@ echo -ne "  ${BOLD}${YELLOW}➜ ${WHITE}Select Option: ${RESET}"
 read opt
  
 case $opt in
-1) bash <(curl -fsSL https://raw.githubusercontent.com/nobita329/hub/refs/heads/main/Codinghub/thames/meng.sh) ;;
+1) bash <(curl -fsSL https://raw.githubusercontent.com/nobita329/hub/refs/heads/main/Codinghub/thames/run.sh) ;;
 2) bash <(curl -fsSL https://raw.githubusercontent.com/prosixrapieryess-prog/Crystal-Blueprint/main/run.sh) ;;
 3)
    echo ""
